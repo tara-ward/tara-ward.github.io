@@ -13,23 +13,24 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alexandria:100,200,300,400,500,600,700,800,900">
     
-    <style>
-		  .u-padding-16 { padding: 16px; }
-  .project-title { margin: 12px 0 6px; font-weight: 700; } /* smaller than H3 */
+<style>
+  .u-padding-16 { padding: 16px; }
+  .project-title { margin: 12px 0 6px; font-weight: 700; }
+
   @media (max-width: 991px){
-    /* hide spacers so rows stack nicely on tablet/phone */
     .u-layout-wrap-3 .u-right-cell,
     .u-layout-wrap-4 .u-right-cell { display: none; }
   }
+
+  /* RMC row spacing only; no full-width white background */
   .u-layout-wrap-4 {
-    background: #ffffff;
-	color: #000;
+    background: transparent !important;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 30px 0;
+    padding: 0; /* earlier sections don't pad the whole row */
   }
-	</style>
-    
+</style>
+ 
     
     
     
@@ -257,43 +258,30 @@
   </div>
 </div>
 
-<!-- ROW 4: RMC/CMR Saint-Jean App (single card; no placeholders) -->
+<!-- ROW 4: RMC/CMR Saint-Jean App (single card, same width as others) -->
 <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-4">
   <div class="u-gutter-0 u-layout">
     <div class="u-layout-col">
       <div class="u-size-60">
-        <div class="u-layout-row">
-
-          <!-- RMC / CMR Saint-Jean App -->
-<div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-4" 
-     style="background:#fff; margin-top:30px; margin-bottom:30px; padding:30px 0;">
-  <div class="u-gutter-0 u-layout">
-    <div class="u-layout-col">
-      <div class="u-size-60">
+        <!-- Center the single card so it matches the look of earlier rows -->
         <div class="u-layout-row" style="justify-content:center;">
-          <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white">
-            <div class="u-container-layout u-valign-top u-padding-16">
-              <a class="u-image u-image-default"
-                 href="https://apps.apple.com/us/app/rmc-cmr-saint-jean/id1364652461"
-                 target="_blank" rel="noopener">
-                <img class="u-image u-image-contain"
-                     src="images/RMC.webp"
-                     alt="RMC/CMR Saint-Jean app store tile"
-                     loading="lazy" style="max-width:100%;height:auto;">
-              </a>
-              <p class="u-text u-text-default project-title"><strong>RMC/CMR Saint-Jean App (Ionic)</strong></p>
-              <p class="u-text u-text-default">
+          <div class="u-align-center u-container-style u-layout-cell u-size-20 u-white u-layout-cell-10">
+            <div class="u-container-layout u-valign-top u-container-layout-10" style="padding:16px;">
+              <img class="u-image u-image-contain u-image-default"
+                   src="images/RMC.webp"
+                   alt="RMC/CMR Saint-Jean app store tile"
+                   data-href="https://apps.apple.com/us/app/rmc-cmr-saint-jean/id1364652461" data-target="_blank">
+              <p class="u-align-center u-text u-text-default u-text-10"><strong>RMC/CMR Saint-Jean App (Ionic)</strong></p>
+              <p class="u-align-center u-text u-text-default">
                 Mobile app I worked on during my Department of National Defence placement.
                 Available on both iOS and Android.
               </p>
-              <p class="u-text u-text-default" style="margin:0;">
+              <p class="u-align-center u-text u-text-default" style="margin:0;">
                 <a class="u-btn u-button-style u-custom-color-2 u-text-white"
-                   href="https://apps.apple.com/us/app/rmc-cmr-saint-jean/id1364652461"
-                   target="_blank" rel="noopener">App Store</a>
+                   href="https://apps.apple.com/us/app/rmc-cmr-saint-jean/id1364652461" target="_blank" rel="noopener">App Store</a>
                 &nbsp;&nbsp;
                 <a class="u-btn u-button-style u-custom-color-2 u-text-white"
-                   href="https://play.google.com/store/apps/details?id=rmc.saint.jean&hl=en_CA"
-                   target="_blank" rel="noopener">Google Play</a>
+                   href="https://play.google.com/store/apps/details?id=rmc.saint.jean&hl=en_CA" target="_blank" rel="noopener">Google Play</a>
               </p>
             </div>
           </div>
